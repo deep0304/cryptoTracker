@@ -227,18 +227,12 @@ Once the application is up and running, you can:
 
 ## 👥 Team Details
 
-<p align="center">
-<a href="https://github.com/your-username/cryptoTracker/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=your-username/cryptoTracker"/>
-</a>
-</p>
-
-**Lead Developer:** Amit Singhal
-
-**Team Members:**
-- Member 1 - Role/Expertise
-- Member 2 - Role/Expertise
-- Member 3 - Role/Expertise
+| GitHub | Name | Role & Expertise |
+|:---:|:---|:---|
+| <a href="https://github.com/deep0304"><img src="https://avatars.githubusercontent.com/u/1234567?v=4&s=100" width="50"/></a> | Om Lakshya Deep | **Lead Developer**<br>• Backend API Routes<br>• Machine Learning Model Development |
+| <a href="https://github.com/amit712singhal"><img src="https://avatars.githubusercontent.com/u/1234568?v=4&s=100" width="50"/></a> | Amit Singhal | • MongoDB Integration<br>• Backend-Frontend Integration<br>• GitHub Management |
+| <a href="https://github.com/uttkarsh123-shiv"><img src="https://avatars.githubusercontent.com/u/1234569?v=4&s=100" width="50"/></a> | Uttkarsh Singh | • Frontend Development<br>• UI/UX Implementation |
+| <a href="https://github.com/kunalsharma3012"><img src="https://avatars.githubusercontent.com/u/1234570?v=4&s=100" width="50"/></a> | Kunal | • User Authentication<br>• Security Implementation |
 
 ## 📄 License
 
