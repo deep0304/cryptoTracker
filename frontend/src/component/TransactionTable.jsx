@@ -2,6 +2,7 @@ import React from "react";
 
 function TransactionTable ( { transactions, isLoading } )
 {
+  console.log( `TT ${ transactions } ` );
   if (isLoading) {
     return (
       <div className="w-full max-w-6xl mx-auto mt-8">
@@ -17,9 +18,7 @@ function TransactionTable ( { transactions, isLoading } )
     );
   }
 
-  if ( !transactions || transactions.length === 0 )
-  {
-    console.log( "No transactions found or empty array" );
+  if (!transactions || transactions.length === 0) {
     return (
       <div className="w-full max-w-6xl mx-auto mt-8">
         <div className="bg-white rounded-lg p-6 text-center">
@@ -28,6 +27,8 @@ function TransactionTable ( { transactions, isLoading } )
       </div>
     );
   }
+
+  console.log( `TT ${ transactions } ` );
 
   const formatDate = (timestamp) => {
     return new Date(timestamp).toLocaleString();
@@ -77,7 +78,7 @@ function TransactionTable ( { transactions, isLoading } )
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
             {transactions.map((tx, index) => (
-              <tr key={ tx.transactionId || index } className="hover:bg-gray-50">
+              <tr key={tx.transactionId || index} className="hover:bg-gray-50">
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                   {tx.hash}
                 </td>

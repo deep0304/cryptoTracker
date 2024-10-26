@@ -60,19 +60,18 @@ function SearchBar ( { setTransactionData, setIsLoading, inputValue, setInputVal
         url = `http://localhost:3000/tezos/tx?tx_hash=${ inputValue }`;
       } else
       {
-        // Function to validate Tezos addresses
-        const isValidTezosAddress = ( address ) =>
+        // function isValidTezosAddress ( address )
+        // {
+        //   const tezosAddressPattern = /^(tz1|tz2|tz3|KT1|KT2)[1-9A-Za-z]{33}$/;
+        //   return tezosAddressPattern.test( address );
+        // }
+        const isTezosAddress = inputValue.startsWith( "tz1" ) ||
+          inputValue.startsWith( "tz2" ) ||
+          inputValue.startsWith( "tz3" );
+        if ( !isTezosAddress )
         {
-          const tezosAddressPattern = /^(tz1|tz2|tz3|KT1|KT2)[1-9A-Za-z]{33}$/;
-          return tezosAddressPattern.test( address );
-        };
-
-        // Validate address format
-        if ( !isValidTezosAddress( inputValue ) )
-        {
-          throw new Error( "Invalid Tezos address format. Address should start with tz1, tz2, tz3, KT1, or KT2 and be 36 characters long." );
+          throw new Error( "Invalid Tezos address format. Address should start with tz1, tz2, or tz3" );
         }
-
         url = `http://localhost:3000/tezos/walletTransactions?address=${ inputValue }`;
       }
 
@@ -85,26 +84,11 @@ function SearchBar ( { setTransactionData, setIsLoading, inputValue, setInputVal
 
       if ( response.data )
       {
-        console.log( `Search Bar :: ${ JSON.stringify( response.data, null, 2 ) }` ); // Convert to a readable string
-
-        // Flatten the transactions array if needed
-        let transactions = [];
-        if ( Array.isArray( response.data ) )
-        {
-          if ( response.data[ 0 ] && response.data[ 0 ].transactions )
-          {
-            transactions = response.data[ 0 ].transactions; // Extract the transactions array
-          } else
-          {
-            transactions = response.data; // Already a flat array
-          }
-        } else
-        {
-          transactions = [ response.data ]; // Single transaction object
-        }
-
-        setTransactionData( transactions ); // Set the flat array of transactions
-        console.log( transactions );
+        console.log( response.data )
+        const transactions = Array.isArray( response.data )
+          ? response.data
+          : [ response.data ];
+        setTransactionData( transactions );
       } else
       {
         setTransactionData( [] );
@@ -112,12 +96,11 @@ function SearchBar ( { setTransactionData, setIsLoading, inputValue, setInputVal
     } catch ( err )
     {
       setError( err.message || "Failed to fetch data. Please try again later." );
-      setTransactionData( [] );
-      await saveToHistory(
-        inputValue,
+      setTransactionData( [] ); // Clear any previous results on error
+      // Save failed search to history
+      await saveToHistory( inputValue,
         inputValue.startsWith( "o" ) ? 'transaction' : 'address',
-        false
-      );
+        false );
       console.error( "Error:", err.message );
     } finally
     {
@@ -126,30 +109,36 @@ function SearchBar ( { setTransactionData, setIsLoading, inputValue, setInputVal
   };
 
   return (
-    <div className="search-bar-container w-full max-w-6xl mx-auto">
+    <div className="search-bar-container w-full max-w-xl mx-auto h-[50px] relative left-[200px] rounded-3xl">
       <form onSubmit={ handleSearch } className="flex flex-wrap gap-4 w-full items-center mb-4">
         <div className="flex-1">
-          <div className="flex overflow-hidden gap-2 items-center px-4 py-2 bg-neutral-700 rounded-lg border border-solid border-neutral-600">
-            <Search className="text-gray-400" size={ 20 } />
+          <div className="flex overflow-hidden gap-2 items-center px-4 py-1 bg-neutral-700 rounded-3xl border border-solid border-neutral-600">
+  
             <input
               type="text"
               id="searchInput"
-              className="flex-1 bg-transparent text-white border-none outline-none p-2"
+              className="flex-1 bg-transparent text-white border-none outline-none p-2 "
               placeholder="Enter Tezos Address or Transaction Hash..."
               aria-label="Search for Tezos address or transaction hash"
               value={ inputValue }
               onChange={ handleInputChange }
             />
-            <button
+
+            {/* removeed search button with icon */}
+          
+            {/* <button
               type="submit"
-              className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
+              className="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
             >
               Search
-            </button>
+            </button> */}
+            <Search className="text-gray-400 " size={ 20 } type="submit" />
           </div>
         </div>
       </form>
 
+
+      {/* refinement needed */}
       { error && (
         <div className="bg-red-500/20 border border-red-500 text-red-400 px-4 py-3 rounded relative mt-4" role="alert">
           <span className="block sm:inline">{ error }</span>
