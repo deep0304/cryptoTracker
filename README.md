@@ -1,5 +1,5 @@
-<p align="center"><img align="center" width="280" src="./frontend/src/assets/logo"/></p>
-<p align="center"><img align="center" width="280" src="./public/images/WEBP-logo-light.webp#gh-light-mode-only"/></p>
+<p align="center"><img align="center" width="280" src="./frontend/src/assets/logo/DARK-logo.webp"/></p>
+<p align="center"><img align="center" width="280" src="./frontend/src/assets/logo/LIGHT-logo.webp#gh-light-mode-only"/></p>
 <h3 align="center">A Comprehensive Blockchain Forensic Tool</h3>
 <hr>
 
