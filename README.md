@@ -8,34 +8,38 @@ A powerful blockchain forensic tool that combines Neo4j's graph visualization ca
 <details>
 <summary><h2>Table of Contents</h2></summary>
 
-- [View Demo](#ViewDemo)
-  - [Working Prototype Demo](#WorkingPrototypeDemo)
-  - [Idea Presentation](#IdeaPresentation)
-- [🛠️ Technology Used](#TechnologyUsed)
-  - [Backend Technologies](#BackendTechnologies)
-  - [Frontend Technologies](#FrontendTechnologies)
-  - [Machine Learning Stack](#MachineLearningStack)
-- [🚀 Key Features](#KeyFeatures)
-- [🎮 Usage](#Usage)
-- [📦 Installation](#Installation)
-  - [Prerequisites](#Prerequisites)
-  - [Getting Started](#GettingStarted)
-  - [Access Points](#AccessPoints)
-- [👥 ASPIRE - Team Details](#ASPIRE-TeamDetails)
-- [📄 License](#License)
+- [View Demo](#view-demo)
+  - [Working Prototype Demo](#working-prototype-demo)
+  - [Idea Presentation](#idea-presentation)
+- [🛠️ Technology Used](#️-technology-used)
+  - [Backend Technologies](#backend-technologies)
+  - [Frontend Technologies](#frontend-technologies)
+  - [Machine Learning Stack](#machine-learning-stack)
+- [🚀 Key Features](#-key-features)
+- [🎮 Usage](#-usage)
+- [📦 Installation](#-installation)
+  - [Prerequisites](#prerequisites)
+  - [Getting Started](#getting-started)
+  - [Access Points](#access-points)
+- [👥 Team Details](#-team-details)
+- [📄 License](#-license)
+
 </details>
 
 ## View Demo
 
 ### Working Prototype Demo
+
 ![Working Prototype Demo](./demo/prototype-demo.mp4)
 
 ### Idea Presentation
-https://github.com/user-attachments/assets/88b7d6da-657e-4e50-8916-bc3541fbae53
+
+<https://github.com/user-attachments/assets/88b7d6da-657e-4e50-8916-bc3541fbae53>
 
 ## 🛠️ Technology Used
 
 ### Backend Technologies
+
 | Technology | Name | Purpose |
 |:---:|:---|:---|
 | <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/> | MongoDB | Storage and management of transaction metadata |
@@ -45,6 +49,7 @@ https://github.com/user-attachments/assets/88b7d6da-657e-4e50-8916-bc3541fbae53
 | <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/> | Python | Backend logic for machine learning and data processing |
 
 ### Frontend Technologies
+
 | Technology | Name | Purpose |
 |:---:|:---|:---|
 | <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/> | React.js | User interface development |
@@ -52,6 +57,7 @@ https://github.com/user-attachments/assets/88b7d6da-657e-4e50-8916-bc3541fbae53
 | <img src="https://img.shields.io/badge/MUI-007FFF?style=for-the-badge&logo=mui&logoColor=white" alt="Material-UI"/> | Material-UI | Component library for modern UI design |
 
 ### Machine Learning Stack
+
 | Technology | Name | Purpose |
 |:---:|:---|:---|
 | <img height=60 src="https://github.com/user-attachments/assets/8ab6ce5f-79d2-4507-aad8-5f1d45aea360" alt="Scikit-learn"/> | Scikit-learn | Pattern analysis and machine learning operations |
@@ -75,7 +81,7 @@ https://github.com/user-attachments/assets/88b7d6da-657e-4e50-8916-bc3541fbae53
   - Historical pattern recognition
   - Export capabilities for investigation reports
   - Custom alert configuration
- 
+
 ## 🎮 Usage
 
 Once the application is up and running, you can:
@@ -98,6 +104,7 @@ Once the application is up and running, you can:
 ## 📦 Installation
 
 ### Prerequisites
+
 - Node.js (v14 or higher)
 - MongoDB
 - Neo4j Database
@@ -106,6 +113,7 @@ Once the application is up and running, you can:
 ### Getting Started
 
 1. **Clone the Repository**
+
    ```bash
    git clone https://github.com/deep0304/cryptoTracker
    cd cryptoTracker
@@ -119,46 +127,50 @@ Once the application is up and running, you can:
    - Update the necessary fields with your own values:
 
 3. **Backend Setup**
+
    ```bash
    # Navigate to backend directory
    cd backend
-   
+
    # Install dependencies
    npm install
-   
+
    # Start the backend server
    npm run start
    ```
 
 4. **Frontend Setup**
+
    ```bash
    # Open a new terminal and navigate to frontend directory
    cd frontend
-   
+
    # Install dependencies
    npm install
-   
+
    # Start the development server
    npm run dev
    ```
 
 5. **ML Model Setup**
+
    ```bash
    # Install required Python packages
    pip install -r requirements.txt
-   
+
    # Run the model script
    python3 app.py
    ```
 
 ### Access Points
+
 - Frontend: `http://localhost:5173`
 - Backend: `http://localhost:3000`
 - python-model: `http://localhost:5000`
 
 <details>
 <summary><h2>Project Structure</h2></summary>
-  
+
 ```bash
 cryptoTracker/
 ├── backend/                      # Express server and API routes
