@@ -243,7 +243,7 @@ cryptoTracker/
 
 </details>
 
-## 👥 Team Details
+## 👥 ASPIRE - Team Details
 
 <table>
   <tr>
