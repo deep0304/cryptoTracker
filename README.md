@@ -111,6 +111,7 @@ https://github.com/user-attachments/assets/88b7d6da-657e-4e50-8916-bc3541fbae53
 | <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js"/> | Express.js | RESTful API development framework |
 | <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/> | Node.js | Server-side runtime environment |
 | <img src="https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j"/> | Neo4j | Graph database for relationship mapping and analysis |
+| <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/> | Python | Backend logic for machine learning and data processing |
 
 ### Frontend Technologies
 | Technology | Name | Purpose |
@@ -122,8 +123,7 @@ https://github.com/user-attachments/assets/88b7d6da-657e-4e50-8916-bc3541fbae53
 ### Machine Learning Stack
 | Technology | Name | Purpose |
 |:---:|:---|:---|
-| <img src="https://img.shields.io/badge/scikitlearn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn"/> | Scikit-learn | Pattern analysis and machine learning operations |
-| <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/> | Isolation Forest | Anomaly detection in transaction patterns |
+| <img height=60 src="https://github.com/user-attachments/assets/8ab6ce5f-79d2-4507-aad8-5f1d45aea360" alt="Scikit-learn"/> | Scikit-learn | Pattern analysis and machine learning operations |
 
 ## 🚀 Key Features
 
@@ -227,7 +227,7 @@ Here’s an optimized version of the **Environment Configuration** section based
 ### Access Points
 - Frontend: `http://localhost:5173`
 - Backend: `http://localhost:3000`
-- ml-model: `http://localhost:5000`
+- python-model: `http://localhost:5000`
 
 
 ## 👥 Team Details
