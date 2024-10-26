@@ -148,14 +148,77 @@ Once the application is up and running, you can:
 ### Access Points
 - Frontend: `http://localhost:5173`
 - Backend: `http://localhost:3000`
+- ml-model: `http://localhost:5000`
 
 ## Project Structure
-```
+```bash
 cryptoTracker/
-├── backend/          # Express server and API routes
-├── frontend/         # React application
+├── backend/                      # Express server and API routes
+│   ├── src/
+│   │   ├── middlewares/          # Middleware functions
+│   │   │   └── user.js
+│   │   ├── models/               # Database models
+│   │   │   ├── searchHistory.model.js
+│   │   │   ├── transaction.model.js
+│   │   │   ├── user.js
+│   │   │   └── wallet.model.js
+│   │   ├── neo4j/                # Neo4j database configuration
+│   │   │   └── neo4j.js
+│   │   ├── router/               # API routes
+│   │   │   ├── adminRouter.js
+│   │   │   ├── bitcoin.js
+│   │   │   ├── ethereum.js
+│   │   │   ├── tezosRouter.js
+│   │   │   └── userRouter.js
+│   │   ├── utils/                # Utility functions
+│   │   └── db.js                 # Database configuration
+│   ├── .env                      # Environment variables
+│   ├── .env.example              # Environment variables example
+│   ├── .gitignore
+│   ├── index.js                  # Server entry point
+│   └── package-lock.json
+│
+├── frontend/                     # React application
+│   ├── public/
+│   │   ├── assets/
+│   │   │   └── logo/
+│   │   └── react.svg
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── ui/               # UI Components
+│   │   │   │   ├── AnomalyDashboard.jsx
+│   │   │   │   ├── Dashboard.jsx
+│   │   │   │   ├── SearchBar.jsx
+│   │   │   │   ├── SearchHistory.jsx
+│   │   │   │   ├── SearchPane.jsx
+│   │   │   │   ├── SignIn.jsx
+│   │   │   │   ├── StatCards.jsx
+│   │   │   │   ├── SuspiciousTransaction.jsx
+│   │   │   │   ├── TransactionGraph.jsx
+│   │   │   │   ├── TransactionTable.jsx
+│   │   │   │   └── UserProfile.jsx
+│   │   │   └── utils.js
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── .gitignore
+│   ├── .eslintrc.js
+│   ├── postcss.config.js
+│   ├── tailwind.config.js
+│   ├── vite.config.js
+│   └── package.json
+│
+├── python_model/                    # Machine Learning Models
+│   ├── model/
+│   │   └── anomaly_model.py
+│   ├── data_preprocessing.py
+│   ├── .env.example
+│   ├── .gitignore
+│   ├── app.py
+│   └── requirements.txt
+│
 └── README.md
-```
 
 ## 👥 Team Details
 
