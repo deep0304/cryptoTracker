@@ -164,6 +164,10 @@ Once the application is up and running, you can:
    - Detect unusual transaction flows
    - Track fund movements
 
+Here’s an optimized version of the **Environment Configuration** section based on your details:
+
+---
+
 ## 📦 Installation
 
 ### Prerequisites
@@ -180,43 +184,44 @@ Once the application is up and running, you can:
    cd cryptoTracker
    ```
 
-4. **Environment Configuration**
-   Create a `.env` file in the `backend` directory and add:
-   ```bash
-   JWT_SECRET = random-_password
-   MONGO_URI=mongodb+srv://<user_name>:<user_password>@<cluster0_name>.g0xck.mongodb.net/<db_name>?retryWrites=true&w=majority
-   BLOCKCYPHER_API_KEY=460c2dea03274faaabab269ff56e9099
-   ETHERSCAN_API_KEY=STR6XG481PBAMK2X9UU37IDH4BBH4MDS5B
+2. **Environment Configuration**
 
-   Create a `.env` file in the `python_model` directory and add:
-   ```bash
-   NEO4J_URI=neo4j+s://<your-neo4j-instance>
-   NEO4J_USERNAME=<your-username>
-   NEO4J_PASSWORD=<your-password>
-   ```
+   Before running the project, you need to configure environment variables for JWT, MongoDB, and API keys. Follow these steps:
 
-   2. **Backend Setup**
+   - Rename the `.env.example` file to `.env`.
+   - Update the necessary fields with your own values:
+
+3. **Backend Setup**
    ```bash
    # Navigate to backend directory
    cd backend
    
    # Install dependencies
-   npm i
+   npm install
    
    # Start the backend server
    npm run start
    ```
 
-3. **Frontend Setup**
+4. **Frontend Setup**
    ```bash
    # Open a new terminal and navigate to frontend directory
    cd frontend
    
    # Install dependencies
-   npm i
+   npm install
    
    # Start the development server
    npm run dev
+   ```
+
+5. **ML Model Setup**
+   ```bash
+   # Install required Python packages
+   pip install -r requirements.txt
+   
+   # Run the model script
+   python3 app.py
    ```
 
 ### Access Points
