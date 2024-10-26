@@ -1,5 +1,5 @@
-<p align="center"><img align="center" width="280" src="./frontend/src/assets/logo/DARK-logo.webp#gh-dark-mode-only"/></p>
-<p align="center"><img align="center" width="280" src="./frontend/src/assets/logo/LIGHT-logo.webp#gh-light-mode-only"/></p>
+<p align="center"><img align="center" width="180" src="./frontend/src/assets/logo/DARK-logo.webp#gh-dark-mode-only"/></p>
+<p align="center"><img align="center" width="180" src="./frontend/src/assets/logo/LIGHT-logo.webp#gh-light-mode-only"/></p>
 <h3 align="center">A Comprehensive Blockchain Forensic Tool</h3>
 <hr>
 
@@ -227,12 +227,39 @@ Once the application is up and running, you can:
 
 ## 👥 Team Details
 
-| GitHub | Name | Role & Expertise |
-|:---:|:---|:---|
-| <a href="https://github.com/deep0304"><img src="https://avatars.githubusercontent.com/u/1234567?v=4&s=100" width="50"/></a> | Om Lakshya Deep | **Lead Developer**<br>• Backend API Routes<br>• Machine Learning Model Development |
-| <a href="https://github.com/amit712singhal"><img src="https://avatars.githubusercontent.com/u/1234568?v=4&s=100" width="50"/></a> | Amit Singhal | • MongoDB Integration<br>• Backend-Frontend Integration<br>• GitHub Management |
-| <a href="https://github.com/uttkarsh123-shiv"><img src="https://avatars.githubusercontent.com/u/1234569?v=4&s=100" width="50"/></a> | Uttkarsh Singh | • Frontend Development<br>• UI/UX Implementation |
-| <a href="https://github.com/kunalsharma3012"><img src="https://avatars.githubusercontent.com/u/1234570?v=4&s=100" width="50"/></a> | Kunal | • User Authentication<br>• Security Implementation |
+<table>
+  <tr>
+    <th>GitHub</th>
+    <th>Name</th>
+    <th>Role & Expertise</th>
+  </tr>
+  <tr>
+    <td colspan="3" align="center"><strong>Team Leader</strong></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/deep0304"><img src="https://avatars.githubusercontent.com/u/151189705?v=4&s=100" width="50"/></a></td>
+    <td>Om Lakshya Deep</td>
+    <td>Backend API Routes<br>• Machine Learning Model Development</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center"><strong>Team Members</strong></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/amit712singhal"><img src="https://avatars.githubusercontent.com/u/123376849?v=4&s=100" width="50"/></a></td>
+    <td>Amit Singhal</td>
+    <td>• MongoDB Integration<br>• Backend-Frontend Integration<br>• GitHub Repo Management</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/uttkarsh123-shiv"><img src="https://avatars.githubusercontent.com/u/151392924?v=4&s=100" width="50"/></a></td>
+    <td>Uttkarsh Singh</td>
+    <td>• Frontend Development<br>• UI Implementation</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/kunalsharma3012"><img src="https://avatars.githubusercontent.com/u/140625490?v=4&s=100" width="50"/></a></td>
+    <td>Kunal</td>
+    <td>• User Authentication</td>
+  </tr>
+</table>
 
 ## 📄 License
 
