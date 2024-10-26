@@ -100,7 +100,7 @@ cryptoTracker/
 ![Working Prototype Demo](./demo/prototype-demo.mp4)
 
 ### Idea Presentation
-![Idea Presentation](./demo/presentation-demo.mp4)
+https://github.com/user-attachments/assets/88b7d6da-657e-4e50-8916-bc3541fbae53
 
 ## 🛠️ Technology Used
 
