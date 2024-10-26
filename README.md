@@ -5,9 +5,13 @@
 
 A powerful blockchain forensic tool that combines Neo4j's graph visualization capabilities with machine learning-based anomaly detection to track and analyze suspicious transactions on the Tezos blockchain. Built for enhanced transparency and security in the crypto ecosystem.
 
-## [View Demo](#)
+## View Demo
 
-![Project Demo](demo.mp4)
+### Working Prototype Demo
+![Working Prototype Demo](demo/prototype-demo.mp4)
+
+### Idea Presentation
+![Idea Presentation](demo/presentation-demo.mp4)
 
 <details>
 <summary><h2>Table of Contents</h2></summary>
@@ -24,30 +28,28 @@ A powerful blockchain forensic tool that combines Neo4j's graph visualization ca
 
 </details>
 
-## 🛠️ Technologies Used
+## 🛠️ Technology Used
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j"/>
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js"/>
-</p>
+### Backend Technologies
+| Technology | Name | Purpose |
+|:---:|:---|:---|
+| <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/> | MongoDB | Storage and management of transaction metadata |
+| <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js"/> | Express.js | RESTful API development framework |
+| <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/> | Node.js | Server-side runtime environment |
+| <img src="https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j"/> | Neo4j | Graph database for relationship mapping and analysis |
 
-- **Backend Stack**
-  - Neo4j for graph database management
-  - MongoDB for transaction metadata storage
-  - Express.js for API development
-  - Node.js for server-side operations
+### Frontend Technologies
+| Technology | Name | Purpose |
+|:---:|:---|:---|
+| <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/> | React.js | User interface development |
+| <img src="https://img.shields.io/badge/D3.js-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white" alt="D3.js"/> | D3.js | Interactive graph visualizations |
+| <img src="https://img.shields.io/badge/MUI-007FFF?style=for-the-badge&logo=mui&logoColor=white" alt="Material-UI"/> | Material-UI | Component library for modern UI design |
 
-- **Frontend Technologies**
-  - React.js for user interface
-  - D3.js for graph visualizations
-  - Material-UI for component design
-
-- **Machine Learning**
-  - Isolation Forest for anomaly detection
-  - Scikit-learn for pattern analysis
+### Machine Learning Stack
+| Technology | Name | Purpose |
+|:---:|:---|:---|
+| <img src="https://img.shields.io/badge/scikitlearn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn"/> | Scikit-learn | Pattern analysis and machine learning operations |
+| <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/> | Isolation Forest | Anomaly detection in transaction patterns |
 
 ## 🚀 Key Features
 
