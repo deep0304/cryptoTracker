@@ -2,7 +2,6 @@ import React from "react";
 
 function TransactionTable ( { transactions, isLoading } )
 {
-  console.log( `TT ${ transactions } ` );
   if (isLoading) {
     return (
       <div className="w-full max-w-6xl mx-auto mt-8">
@@ -27,8 +26,6 @@ function TransactionTable ( { transactions, isLoading } )
       </div>
     );
   }
-
-  console.log( `TT ${ transactions } ` );
 
   const formatDate = (timestamp) => {
     return new Date(timestamp).toLocaleString();

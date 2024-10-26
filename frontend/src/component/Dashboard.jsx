@@ -19,6 +19,7 @@ function Dashboard ( { onLogout } )
   const [ showGraph, setShowGraph ] = useState( true );
   const [ error, setError ] = useState( "" );
   const [ searchInputValue, setSearchInputValue ] = useState( '' );
+  const [ selectedChain, setSelectedChain ] = useState( '' );
   const [ activeView, setActiveView ] = useState( 'transactions' ); // 'transactions' or 'anomalies'
 
 
@@ -26,6 +27,8 @@ function Dashboard ( { onLogout } )
   {
     setShowGraph( ( prevShowGraph ) => !prevShowGraph );
   };
+
+  const chains = [ 'tezos', 'bitcoin', 'ethereum' ];
 
   return (
     <div className="flex overflow-hidden flex-col min-h-screen bg-neutral-800">
@@ -77,10 +80,7 @@ function Dashboard ( { onLogout } )
                 </div>
               </div>
             ) }
-
           </div>
-
-
         </div>
       </header>
 
@@ -122,11 +122,6 @@ function Dashboard ( { onLogout } )
                     Anomaly Detection
                   </button>
                 </div>
-                { activeView === 'transactions' && transactionData.length > 0 && (
-                  <span className="text-white text-sm">
-                    { transactionData.length } Transaction{ transactionData.length !== 1 ? 's' : '' } Found
-                  </span>
-                ) }
               </div>
 
               {/* Loading State */ }

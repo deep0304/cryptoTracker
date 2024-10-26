@@ -60,18 +60,19 @@ function SearchBar ( { setTransactionData, setIsLoading, inputValue, setInputVal
         url = `http://localhost:3000/tezos/tx?tx_hash=${ inputValue }`;
       } else
       {
-        // function isValidTezosAddress ( address )
-        // {
-        //   const tezosAddressPattern = /^(tz1|tz2|tz3|KT1|KT2)[1-9A-Za-z]{33}$/;
-        //   return tezosAddressPattern.test( address );
-        // }
-        const isTezosAddress = inputValue.startsWith( "tz1" ) ||
-          inputValue.startsWith( "tz2" ) ||
-          inputValue.startsWith( "tz3" );
-        if ( !isTezosAddress )
+        // Function to validate Tezos addresses
+        const isValidTezosAddress = ( address ) =>
         {
-          throw new Error( "Invalid Tezos address format. Address should start with tz1, tz2, or tz3" );
+          const tezosAddressPattern = /^(tz1|tz2|tz3|KT1|KT2)[1-9A-Za-z]{33}$/;
+          return tezosAddressPattern.test( address );
+        };
+
+        // Validate address format
+        if ( !isValidTezosAddress( inputValue ) )
+        {
+          throw new Error( "Invalid Tezos address format. Address should start with tz1, tz2, tz3, KT1, or KT2 and be 36 characters long." );
         }
+
         url = `http://localhost:3000/tezos/walletTransactions?address=${ inputValue }`;
       }
 
@@ -84,11 +85,23 @@ function SearchBar ( { setTransactionData, setIsLoading, inputValue, setInputVal
 
       if ( response.data )
       {
-        console.log( response.data )
-        const transactions = Array.isArray( response.data )
-          ? response.data
-          : [ response.data ];
-        setTransactionData( transactions );
+        // Flatten the transactions array if needed
+        let transactions = [];
+        if ( Array.isArray( response.data ) )
+        {
+          if ( response.data[ 0 ] && response.data[ 0 ].transactions )
+          {
+            transactions = response.data[ 0 ].transactions; // Extract the transactions array
+          } else
+          {
+            transactions = response.data; // Already a flat array
+          }
+        } else
+        {
+          transactions = [ response.data ]; // Single transaction object
+        }
+
+        setTransactionData( transactions ); // Set the flat array of transactions
       } else
       {
         setTransactionData( [] );
@@ -96,11 +109,12 @@ function SearchBar ( { setTransactionData, setIsLoading, inputValue, setInputVal
     } catch ( err )
     {
       setError( err.message || "Failed to fetch data. Please try again later." );
-      setTransactionData( [] ); // Clear any previous results on error
-      // Save failed search to history
-      await saveToHistory( inputValue,
+      setTransactionData( [] );
+      await saveToHistory(
+        inputValue,
         inputValue.startsWith( "o" ) ? 'transaction' : 'address',
-        false );
+        false
+      );
       console.error( "Error:", err.message );
     } finally
     {
@@ -113,7 +127,7 @@ function SearchBar ( { setTransactionData, setIsLoading, inputValue, setInputVal
       <form onSubmit={ handleSearch } className="flex flex-wrap gap-4 w-full items-center mb-4">
         <div className="flex-1">
           <div className="flex overflow-hidden gap-2 items-center px-4 py-1 bg-neutral-700 rounded-3xl border border-solid border-neutral-600">
-  
+
             <input
               type="text"
               id="searchInput"
@@ -124,8 +138,8 @@ function SearchBar ( { setTransactionData, setIsLoading, inputValue, setInputVal
               onChange={ handleInputChange }
             />
 
-            {/* removeed search button with icon */}
-          
+            {/* removeed search button with icon */ }
+
             {/* <button
               type="submit"
               className="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
@@ -138,7 +152,7 @@ function SearchBar ( { setTransactionData, setIsLoading, inputValue, setInputVal
       </form>
 
 
-      {/* refinement needed */}
+      {/* refinement needed */ }
       { error && (
         <div className="bg-red-500/20 border border-red-500 text-red-400 px-4 py-3 rounded relative mt-4" role="alert">
           <span className="block sm:inline">{ error }</span>
