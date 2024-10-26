@@ -8,16 +8,153 @@ A powerful blockchain forensic tool that combines Neo4j's graph visualization ca
 <details>
 <summary><h2>Table of Contents</h2></summary>
 
-- [Preview](#preview)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Team Details](#team-details)
-- [Contributing](#contributing)
-- [Connect with Us](#connect-with-us)
-- [License](#license)
+- [View Demo](#ViewDemo)
+  - [Working Prototype Demo](#WorkingPrototypeDemo)
+  - [Idea Presentation](#IdeaPresentation)
+- [🛠️ Technology Used](#TechnologyUsed)
+  - [Backend Technologies](#BackendTechnologies)
+  - [Frontend Technologies](#FrontendTechnologies)
+  - [Machine Learning Stack](#MachineLearningStack)
+- [🚀 Key Features](#KeyFeatures)
+- [🎮 Usage](#Usage)
+- [📦 Installation](#Installation)
+  - [Prerequisites](#Prerequisites)
+  - [Getting Started](#GettingStarted)
+  - [Access Points](#AccessPoints)
+- [👥 ASPIRE - Team Details](#ASPIRE-TeamDetails)
+- [📄 License](#License)
 </details>
+
+## View Demo
+
+### Working Prototype Demo
+![Working Prototype Demo](./demo/prototype-demo.mp4)
+
+### Idea Presentation
+https://github.com/user-attachments/assets/88b7d6da-657e-4e50-8916-bc3541fbae53
+
+## 🛠️ Technology Used
+
+### Backend Technologies
+| Technology | Name | Purpose |
+|:---:|:---|:---|
+| <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/> | MongoDB | Storage and management of transaction metadata |
+| <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js"/> | Express.js | RESTful API development framework |
+| <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/> | Node.js | Server-side runtime environment |
+| <img src="https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j"/> | Neo4j | Graph database for relationship mapping and analysis |
+| <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/> | Python | Backend logic for machine learning and data processing |
+
+### Frontend Technologies
+| Technology | Name | Purpose |
+|:---:|:---|:---|
+| <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/> | React.js | User interface development |
+| <img src="https://img.shields.io/badge/D3.js-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white" alt="D3.js"/> | D3.js | Interactive graph visualizations |
+| <img src="https://img.shields.io/badge/MUI-007FFF?style=for-the-badge&logo=mui&logoColor=white" alt="Material-UI"/> | Material-UI | Component library for modern UI design |
+
+### Machine Learning Stack
+| Technology | Name | Purpose |
+|:---:|:---|:---|
+| <img height=60 src="https://github.com/user-attachments/assets/8ab6ce5f-79d2-4507-aad8-5f1d45aea360" alt="Scikit-learn"/> | Scikit-learn | Pattern analysis and machine learning operations |
+
+## 🚀 Key Features
+
+- **Advanced Graph Visualization**
+  - Interactive wallet relationship mapping
+  - Real-time transaction flow tracking
+  - Cluster analysis for identifying related wallets
+  - Custom graph querying capabilities
+
+- **Machine Learning-Powered Detection**
+  - Real-time anomaly detection using Isolation Forest
+  - Pattern recognition for mixing services
+  - Behavioral analysis of wallet activities
+  - Automated risk scoring system
+
+- **Comprehensive Forensics Suite**
+  - Detailed transaction path analysis
+  - Historical pattern recognition
+  - Export capabilities for investigation reports
+  - Custom alert configuration
+ 
+## 🎮 Usage
+
+Once the application is up and running, you can:
+
+1. **Visualize Wallet Networks**
+   - Import wallet addresses
+   - View transaction relationships
+   - Analyze connection patterns
+
+2. **Monitor Transactions**
+   - Track real-time blockchain activity
+   - Receive alerts for suspicious patterns
+   - Generate investigation reports
+
+3. **Analyze Patterns**
+   - Identify mixing services
+   - Detect unusual transaction flows
+   - Track fund movements
+
+## 📦 Installation
+
+### Prerequisites
+- Node.js (v14 or higher)
+- MongoDB
+- Neo4j Database
+- Git
+
+### Getting Started
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/deep0304/cryptoTracker
+   cd cryptoTracker
+   ```
+
+2. **Environment Configuration**
+
+   Before running the project, you need to configure environment variables for JWT, MongoDB, and API keys. Follow these steps:
+
+   - Rename the `.env.example` file to `.env`.
+   - Update the necessary fields with your own values:
+
+3. **Backend Setup**
+   ```bash
+   # Navigate to backend directory
+   cd backend
+   
+   # Install dependencies
+   npm install
+   
+   # Start the backend server
+   npm run start
+   ```
+
+4. **Frontend Setup**
+   ```bash
+   # Open a new terminal and navigate to frontend directory
+   cd frontend
+   
+   # Install dependencies
+   npm install
+   
+   # Start the development server
+   npm run dev
+   ```
+
+5. **ML Model Setup**
+   ```bash
+   # Install required Python packages
+   pip install -r requirements.txt
+   
+   # Run the model script
+   python3 app.py
+   ```
+
+### Access Points
+- Frontend: `http://localhost:5173`
+- Backend: `http://localhost:3000`
+- python-model: `http://localhost:5000`
 
 <details>
 <summary><h2>Project Structure</h2></summary>
@@ -93,142 +230,6 @@ cryptoTracker/
 ```
 
 </details>
-
-## View Demo
-
-### Working Prototype Demo
-![Working Prototype Demo](./demo/prototype-demo.mp4)
-
-### Idea Presentation
-https://github.com/user-attachments/assets/88b7d6da-657e-4e50-8916-bc3541fbae53
-
-## 🛠️ Technology Used
-
-### Backend Technologies
-| Technology | Name | Purpose |
-|:---:|:---|:---|
-| <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/> | MongoDB | Storage and management of transaction metadata |
-| <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js"/> | Express.js | RESTful API development framework |
-| <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/> | Node.js | Server-side runtime environment |
-| <img src="https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j"/> | Neo4j | Graph database for relationship mapping and analysis |
-| <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/> | Python | Backend logic for machine learning and data processing |
-
-### Frontend Technologies
-| Technology | Name | Purpose |
-|:---:|:---|:---|
-| <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/> | React.js | User interface development |
-| <img src="https://img.shields.io/badge/D3.js-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white" alt="D3.js"/> | D3.js | Interactive graph visualizations |
-| <img src="https://img.shields.io/badge/MUI-007FFF?style=for-the-badge&logo=mui&logoColor=white" alt="Material-UI"/> | Material-UI | Component library for modern UI design |
-
-### Machine Learning Stack
-| Technology | Name | Purpose |
-|:---:|:---|:---|
-| <img height=60 src="https://github.com/user-attachments/assets/8ab6ce5f-79d2-4507-aad8-5f1d45aea360" alt="Scikit-learn"/> | Scikit-learn | Pattern analysis and machine learning operations |
-
-## 🚀 Key Features
-
-- **Advanced Graph Visualization**
-  - Interactive wallet relationship mapping
-  - Real-time transaction flow tracking
-  - Cluster analysis for identifying related wallets
-  - Custom graph querying capabilities
-
-- **Machine Learning-Powered Detection**
-  - Real-time anomaly detection using Isolation Forest
-  - Pattern recognition for mixing services
-  - Behavioral analysis of wallet activities
-  - Automated risk scoring system
-
-- **Comprehensive Forensics Suite**
-  - Detailed transaction path analysis
-  - Historical pattern recognition
-  - Export capabilities for investigation reports
-  - Custom alert configuration
- 
-## 🎮 Usage
-
-Once the application is up and running, you can:
-
-1. **Visualize Wallet Networks**
-   - Import wallet addresses
-   - View transaction relationships
-   - Analyze connection patterns
-
-2. **Monitor Transactions**
-   - Track real-time blockchain activity
-   - Receive alerts for suspicious patterns
-   - Generate investigation reports
-
-3. **Analyze Patterns**
-   - Identify mixing services
-   - Detect unusual transaction flows
-   - Track fund movements
-
-Here’s an optimized version of the **Environment Configuration** section based on your details:
-
----
-
-## 📦 Installation
-
-### Prerequisites
-- Node.js (v14 or higher)
-- MongoDB
-- Neo4j Database
-- Git
-
-### Getting Started
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/deep0304/cryptoTracker
-   cd cryptoTracker
-   ```
-
-2. **Environment Configuration**
-
-   Before running the project, you need to configure environment variables for JWT, MongoDB, and API keys. Follow these steps:
-
-   - Rename the `.env.example` file to `.env`.
-   - Update the necessary fields with your own values:
-
-3. **Backend Setup**
-   ```bash
-   # Navigate to backend directory
-   cd backend
-   
-   # Install dependencies
-   npm install
-   
-   # Start the backend server
-   npm run start
-   ```
-
-4. **Frontend Setup**
-   ```bash
-   # Open a new terminal and navigate to frontend directory
-   cd frontend
-   
-   # Install dependencies
-   npm install
-   
-   # Start the development server
-   npm run dev
-   ```
-
-5. **ML Model Setup**
-   ```bash
-   # Install required Python packages
-   pip install -r requirements.txt
-   
-   # Run the model script
-   python3 app.py
-   ```
-
-### Access Points
-- Frontend: `http://localhost:5173`
-- Backend: `http://localhost:3000`
-- python-model: `http://localhost:5000`
-
 
 ## 👥 Team Details
 
