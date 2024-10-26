@@ -30,7 +30,7 @@ A powerful blockchain forensic tool that combines Neo4j's graph visualization ca
 
 ### Working Prototype Demo
 
-![Working Prototype Demo](./demo/prototype-demo.mp4)
+[prototype-demo.webm](https://github.com/user-attachments/assets/99b34122-e750-4751-a971-acec1869d99b)
 
 ### Idea Presentation
 
