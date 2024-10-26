@@ -257,7 +257,7 @@ cryptoTracker/
   <tr>
     <td><a href="https://github.com/deep0304"><img src="https://avatars.githubusercontent.com/u/151189705?v=4&s=100" width="50"/></a></td>
     <td>Om Lakshya Deep</td>
-    <td>Backend API Routes<br>• Machine Learning Model Development</td>
+    <td>• Backend API Routes<br>• Machine Learning Model Development</td>
   </tr>
   <tr>
     <td colspan="3" align="center"><strong>Team Members</strong></td>
