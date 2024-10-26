@@ -10,7 +10,6 @@ const ethereumRouter = require( "./src/router/ethereum" );
 const bitcoinRouter = require( "./src/router/bitcoin" );
 const tezosRouter = require( "./src/router/tezosRouter" );
 
-
 const express = require( "express" );
 const cors = require( "cors" );
 
