@@ -97,10 +97,10 @@ cryptoTracker/
 ## View Demo
 
 ### Working Prototype Demo
-![Working Prototype Demo](demo/prototype-demo.mp4)
+![Working Prototype Demo](./demo/prototype-demo.mp4)
 
 ### Idea Presentation
-![Idea Presentation](demo/presentation-demo.mp4)
+![Idea Presentation](./demo/presentation-demo.mp4)
 
 ## 🛠️ Technology Used
 
