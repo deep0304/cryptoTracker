@@ -21,7 +21,7 @@ A powerful blockchain forensic tool that combines Neo4j's graph visualization ca
   - [Prerequisites](#prerequisites)
   - [Getting Started](#getting-started)
   - [Access Points](#access-points)
-- [👥 Team Details](#-team-details)
+- [👥 ASPIRE - Team Details](#-aspire---team-details)
 - [📄 License](#-license)
 
 </details>
@@ -34,7 +34,7 @@ A powerful blockchain forensic tool that combines Neo4j's graph visualization ca
 
 ### Idea Presentation
 
-<https://github.com/user-attachments/assets/88b7d6da-657e-4e50-8916-bc3541fbae53>
+[idea-presentation.webm](https://github.com/user-attachments/assets/88b7d6da-657e-4e50-8916-bc3541fbae53)
 
 ## 🛠️ Technology Used
 
