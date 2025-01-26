@@ -1,12 +1,12 @@
 <p align="center"><img align="center" width="180" src="./frontend/src/assets/logo/DARK-logo.webp#gh-dark-mode-only"/></p>
 <p align="center"><img align="center" width="180" src="./frontend/src/assets/logo/LIGHT-logo.webp#gh-light-mode-only"/></p>
 <h3 align="center">A Comprehensive Blockchain Forensic Tool - HackwithMAIT 5.0 Project</h3>
-<hr>
+<hr/>
 
 A powerful blockchain forensic tool that combines Neo4j's graph visualization capabilities with machine learning-based anomaly detection to track and analyze suspicious transactions on the Tezos blockchain. Built for enhanced transparency and security in the crypto ecosystem.
 
 <details>
-<summary><h2>Table of Contents</h2></summary>
+<summary>Table of Contents</summary>
 
 - [View Demo](#view-demo)
   - [Working Prototype Demo](#working-prototype-demo)
@@ -101,7 +101,7 @@ Once the application is up and running, you can:
    - Detect unusual transaction flows
    - Track fund movements
 
-## 📦 Installation
+## 🎯 Getting Started
 
 ### Prerequisites
 
@@ -110,7 +110,7 @@ Once the application is up and running, you can:
 - Neo4j Database
 - Git
 
-### Getting Started
+### Installation
 
 1. **Clone the Repository**
 
@@ -168,46 +168,45 @@ Once the application is up and running, you can:
 - Backend: `http://localhost:3000`
 - python-model: `http://localhost:5000`
 
-<h2>
 <details>
-<summary>📚 Project Structure</summary>
+<summary><h3>📚 Project Structure</h3></summary>
 <br/>
   
   ```bash
 📂 cryptoTracker/  
-├── 📂 backend/                      # Express server and API routes  
+├── 📂 backend/                        # Express server and API routes  
 │   ├── 📂 src/  
-│   │   ├── 📂 middlewares/          # Middleware functions  
+│   │   ├── 📂 middlewares/            # Middleware functions  
 │   │   │   └── user.js  
-│   │   ├── 📂 models/               # Database models  
+│   │   ├── 📂 models/                 # Database models  
 │   │   │   ├── searchHistory.model.js  
 │   │   │   ├── transaction.model.js  
 │   │   │   ├── user.js  
 │   │   │   └── wallet.model.js  
-│   │   ├── 📂 neo4j/                # Neo4j database configuration  
+│   │   ├── 📂 neo4j/                  # Neo4j database configuration  
 │   │   │   └── neo4j.js  
-│   │   ├── 📂 router/               # API routes  
+│   │   ├── 📂 router/                 # API routes  
 │   │   │   ├── adminRouter.js  
 │   │   │   ├── bitcoin.js  
 │   │   │   ├── ethereum.js  
 │   │   │   ├── tezosRouter.js  
 │   │   │   └── userRouter.js  
-│   │   ├── 📂 utils/                # Utility functions  
-│   │   └── db.js                   # Database configuration  
-│   ├── 📄 .env                      # Environment variables  
-│   ├── 📄 .env.example              # Environment variables example  
+│   │   ├── 📂 utils/                  # Utility functions  
+│   │   └── db.js                      # Database configuration  
+│   ├── 📄 .env                        # Environment variables  
+│   ├── 📄 .env.example                # Environment variables example  
 │   ├── 📄 .gitignore  
-│   ├── 📄 index.js                  # Server entry point  
+│   ├── 📄 index.js                    # Server entry point  
 │   └── 📄 package-lock.json  
 │  
-├── 📂 frontend/                     # React application  
-│   ├── 📂 public/  
+├── 📂 frontend/                       # React application  
+│   ├── 📂 public/    
 │   │   ├── 📂 assets/  
 │   │   │   └── logo/  
 │   │   └── react.svg  
 │   ├── 📂 src/  
 │   │   ├── 📂 components/  
-│   │   │   ├── 📂 ui/               # UI Components  
+│   │   │   ├── 📂 ui/                 # UI Components  
 │   │   │   │   ├── AnomalyDashboard.jsx  
 │   │   │   │   ├── Dashboard.jsx  
 │   │   │   │   ├── SearchBar.jsx  
@@ -231,7 +230,7 @@ Once the application is up and running, you can:
 │   ├── 📄 vite.config.js  
 │   └── 📄 package.json  
 │  
-├── 📂 python_model/                 # Machine Learning Models  
+├── 📂 python_model/                   # Machine Learning Models  
 │   ├── 📂 model/  
 │   │   └── anomaly_model.py  
 │   ├── 📄 data_preprocessing.py  
